@@ -1,26 +1,17 @@
-# Laravel - Migrations e Seeders para estados e cidades Brasileiras
+# Brazilian states and cities
 
-Neste repositório encontram-se as migrations e seeders necessárias para criação de tabelas de estado e cidades Brasileiras.
+Laravel migrations and seeders of brazilian states and cities.
 
-## Informações
+## Informations
 
-A tabela `states` contém:
+The `states` table has:
 
-- Título, abreviação e slug
-- Código ISO
-- Informação populacional
+- `id`
+- `name`
+- `acronym`
 
-A tabela `cities` contém:
+The `cities` tables has:
 
-- Título e slug
-- DDD das cidades
-- Código ISO
-- Informação populacional
-- Latitude e longitude
-- Renda per-capita
-
-## Como instalar
-
-- `php artisan migrate`
-- `php artisan db:seed`
-
+- `id`
+- `state_id`
+- `name`
